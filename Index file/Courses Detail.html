@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Courses - IT Training Center</title>
+
+    <link rel="stylesheet" href="/CSS/sstyle.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#2563EB",
+                        dark: "#0F172A"
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="w-full bg-[#1b567a] text-white px-6 py-4 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-3">
+            <img src="/image/logo.png" alt="IT Training Center Logo" class="h-12 w-12 object-contain rounded-3xl">
+            <span class="text-2xl font-bold text-white">
+                IT Training Center
+            </span>
+        </a>
+        <div class="hidden items-center gap-8 md:flex">
+            <a href="index.html" class="font-medium text-white hover:text-primary">
+                Home
+            </a>
+            <a href="courses.html" class="font-medium text-white hover:text-primary">
+                Courses
+            </a>
+            <a href="Courses Detail.html" class="font-medium text-white hover:text-primary">
+                Courses Details
+            </a>
+            <a href="about.html" class="font-medium text-white hover:text-primary">
+                About
+            </a>
+            <a href="contact.html" class="font-medium text-white hover:text-primary">
+                Contact
+            </a>
+            <a href="registration.html"
+                class="rounded-lg bg-primary px-5 py-2.5 font-medium text-white hover:bg-blue-700">
+                Register
+            </a>
+        </div>
+
+        <button id="menuButton" class="rounded-lg border border-slate-300 px-3 py-2 md:hidden" aria-label="Open menu">
+            ☰
+        </button>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden border-t bg-white px-6 py-5 md:hidden">
+        <div class="flex flex-col gap-4">
+            <a href="index.html" class="font-medium text-primary">
+                Home
+            </a>
+            <a href="courses.html" class="font-medium text-slate-600">
+                Courses
+            </a>
+            <a href="about.html" class="font-medium text-slate-600">
+                About
+            </a>
+            <a href="contact.html" class="font-medium text-slate-600">
+                Contact
+            </a>
+            <a href="registration.html" class="rounded-lg bg-primary px-5 py-2.5 text-center font-medium text-white">
+                Register
+            </a>
+
+        </div>
+    </div>
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="course-header">
+
+            <p class="small-title">OUR COURSES</p>
+
+            <h1>Explore Our Courses</h1>
+
+            <p class="description">
+                Choose a beginner-friendly IT course and build the skills
+                you need to start your IT journey.
+
+            </p>
+
+        </section>
+
+        <!-- Filter Buttons -->
+        <section class="filter-section">
+
+            <button class="filter-btn active" data-category="all" onclick="filterCourses('all')">
+                All Courses
+            </button>
+
+            <button class="filter-btn" data-category="beginner" onclick="filterCourses('beginner')">
+                Beginner
+            </button>
+
+            <button class="filter-btn" data-category="intermediate" onclick="filterCourses('intermediate')">
+                Intermediate
+            </button>
+
+        </section>
+
+
+        <!-- ================= COURSE CARDS ================= -->
+        <section class="courses-container">
+
+            <!-- HTML & CSS -->
+            <article class="course-card beginner">
+
+                <div class="course-image">
+                    <img src="/image/HTML copy.png" alt="HTML Course">
+                </div>
+
+                <div class="course-content">
+
+                    <span class="course-level">
+                        Beginner
+                    </span>
+
+                    <h2>HTML</h2>
+                    <p>
+                        Learn how to create beautiful and responsive
+                        websites using HTML and CSS. When you use html you can see the perfect resullt
+                        
+                    </p>
+
+                    <div class="course-info">
+
+                        <div>
+                            <strong>Duration</strong>
+                            <span>5 Weeks</span>
+                        </div>
+
+                        <div>
+                            <strong>Instructor</strong>
+                            <span>Dr.lyly</span>
+                        </div>
+
+                    </div>
+
+                    <button type="button" class="details-btn" data-course="html-css">
+                        View Details
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- CSS -->
+            <article class="course-card intermediate">
+
+                <div class="course-image">
+                    <img src="/image/CSS copy.png" alt="CSS Course">
+                </div>
+
+                <div class="course-content">
+
+                    <span class="course-level">
+                        Beginner → Intermediate
+                    </span>
+
+                    <h2>CSS</h2>
+
+                    <p>
+                        Learn styling, layouts, responsiveness, and
+                        modern design patterns for stylish web pages.
+                    </p>
+
+                    <div class="course-info">
+
+                        <div>
+                            <strong>Duration</strong>
+                            <span>5 Weeks</span>
+                        </div>
+
+                        <div>
+                            <strong>Instructor</strong>
+                            <span>Mr.lala </span>
+                        </div>
+
+                    </div>
+
+                    <button type="button" class="details-btn" data-course="css">
+                        View Details
+                    </button>
+
+                </div>
+
+            </article>
+
+            <!-- Algorithm -->
+            <article class="course-card intermediate">
+
+                <div class="course-image">
+                    <img src="/image/Algorithm copy.png" alt="Algorithm Course">
+                </div>
+
+                <div class="course-content">
+
+                    <span class="course-level">
+                        Intermediate
+                    </span>
+
+                    <h2>Algorithm</h2>
+
+                    <p>
+                        Learn problem-solving steps, flow logic, search,
+                        and efficient thinking for coding challenges.
+                    </p>
+
+                    <div class="course-info">
+
+                        <div>
+                            <strong>Duration</strong>
+                            <span>5 Weeks</span>
+                        </div>
+
+                        <div>
+                            <strong>Instructor</strong>
+                            <span>Mr.Kunika</span>
+                        </div>
+
+                    </div>
+
+                    <button type="button" class="details-btn" data-course="algorithm">
+                        View Details
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- UI/UX Design -->
+            <article class="course-card beginner">
+
+                <div class="course-image">
+                    <img src="/image/UI.png" alt="UI UX Design Course">
+                </div>
+
+                <div class="course-content">
+
+                    <span class="course-level">
+                        Beginner
+                    </span>
+
+                    <h2>UI/UX Design</h2>
+
+                    <p>
+                        Learn user interface and user experience design
+                        using modern design principles and beautiful more.
+                    </p>
+
+                    <div class="course-info">
+
+                        <div>
+                            <strong>Duration</strong>
+                            <span>5 Weeks</span>
+                        </div>
+
+                        <div>
+                            <strong>Instructor</strong>
+                            <span>Ms.Chan ry</span>
+                        </div>
+
+                    </div>
+
+                    <button type="button" class="details-btn" data-course="uiux">
+                        View Details
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- Python -->
+            <article class="course-card beginner">
+
+                <div class="course-image">
+                    <img src="/image/python.png" alt="Python Programming Course">
+                </div>
+
+                <div class="course-content">
+
+                    <span class="course-level">
+                        Beginner
+                    </span>
+
+                    <h2>Python Programming</h2>
+
+                    <p>
+                        Learn Python programming, variables, conditions,
+                        loops, functions, and basic projects.
+                    </p>
+
+                    <div class="course-info">
+
+                        <div>
+                            <strong>Duration</strong>
+                            <span>5 Weeks</span>
+                        </div>
+
+                        <div>
+                            <strong>Instructor</strong>
+                            <span>Mr.C THa</span>
+                        </div>
+
+                    </div>
+
+                    <button type="button" class="details-btn" data-course="python">
+                        View Details
+                    </button>
+
+                </div>
+
+            </article>
+
+            <!-- Git -->
+            <article class="course-card beginner">
+
+
+                <div class="course-image">
+                    <img src="../image/Git.png" alt="Git and Version Control Course">
+                </div>
+
+                <div class="course-content">
+
+                    <span class="course-level">
+                        Beginner
+                    </span>
+
+                    <h2>Git &amp; Version Control</h2>
+
+                    <p>
+                        Learn how to track changes, manage branches, and
+                        collaborate confidently on coding projects.
+                    </p>
+
+                    <div class="course-info">
+
+                        <div>
+                            <strong>Duration</strong>
+                            <span>5 Weeks</span>
+                        </div>
+
+                        <div>
+                            <strong>Instructor</strong>
+                            <span>Mr.Smit </span>
+                        </div>
+
+                    </div>
+
+                    <button type="button" class="details-btn" data-course="Git4">
+                        View Details
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+        </section>
+
+    </main>
+    <section class="learn-section">
+        <h3>What You Will Learn</h3>
+
+        <!-- Course 1 -->
+        <div class="lesson-card">
+            <button class="lesson-button" onclick="openQuiz('internet')">
+                <span>
+                    <strong>1. Introduction to Internet Protocols & Web Browsers</strong>
+                    <small>
+                        Learn DNS, client-server models, HTTP requests, and rendering engines.
+                    </small>
+                </span>
+                <span class="arrow">›</span>
+            </button>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="lesson-card">
+            <button class="lesson-button" onclick="openQuiz('html5')">
+                <span>
+                    <strong>2. Writing Semantic HTML5 Documents</strong>
+                    <small>
+                        Structure pages using proper article, section, nav, header, and main nodes.
+                    </small>
+                </span>
+                <span class="arrow">›</span>
+            </button>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="lesson-card">
+            <button class="lesson-button" onclick="openQuiz('css3')">
+                <span>
+                    <strong>3. Styling with CSS3 Flexbox and Grid</strong>
+                    <small>
+                        Manage dynamic responsive sizing, margins, layout workflows, and colors.
+                    </small>
+                </span>
+                <span class="arrow">›</span>
+            </button>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="lesson-card">
+            <button class="lesson-button" onclick="openQuiz('Git4')">
+                <span>
+                    <strong>4. Introduction to Git and Version Control</strong>
+                    <small>
+                        Learn the fundamentals of Git, branching, merging, and collaborative development.
+                    </small>
+                </span>
+                <span class="arrow">›</span>
+            </button>
+        </div>
+
+        <!-- Course 5 -->
+        <div class="lesson-card">
+            <button class="lesson-button" onclick="openQuiz('css')">
+                <span>
+                    <strong>5. CSS Fundamentals</strong>
+                    <small>
+                        Learn selectors, layout properties, spacing, responsiveness, and modern styling techniques.
+                    </small>
+                </span>
+                <span class="arrow">›</span>
+            </button>
+        </div>
+
+        <!-- Course 6 -->
+        <div class="lesson-card">
+            <button class="lesson-button" onclick="openQuiz('algorithm')">
+                <span>
+                    <strong>6. Algorithm and Problem Solving</strong>
+                    <small>
+                        Understand step-by-step thinking, loops, search patterns, and efficient problem-solving
+                        strategies.
+                    </small>
+                </span>
+                <span class="arrow">›</span>
+            </button>
+        </div>
+    </section>
+
+
+    <!-- QUIZ -->
+    <div id="quizModal" class="quiz-modal">
+
+        <div class="quiz-box">
+
+            <button class="close-quiz" onclick="closeQuiz()">×</button>
+
+            <p class="small-title">COURSE QUIZ</p>
+
+            <h2 id="quizTitle">Quiz</h2>
+
+            <form id="quizForm">
+
+                <div id="questions"></div>
+
+                <button type="submit" class="submit-quiz">
+                    Submit Quiz
+                </button>
+
+            </form>
+
+            <!-- RESULT -->
+            <div id="quizResult" class="quiz-result">
+                <h2>Quiz Result</h2>
+
+                <div class="score" id="score"></div>
+
+                <p id="resultMessage"></p>
+
+                <button class="retry-btn" onclick="retryQuiz()">
+                    GO ON
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+                <h3>IT Training Center</h3>
+                <p>
+                    Learn IT skills and start your journey
+                    with confidence.
+                </p>
+            </div>
+
+            <!--=================Link=================--->
+            <div>
+                <h4>Sitemap</h4>
+
+                <a href="../index.html">Home</a>
+                <a href="../Courses.html">Courses</a>
+                <a href="Courses Detail.html">Courses Detail</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="register.html">Register</a>
+            </div>
+
+
+            <div>
+                <h4>Contact</h4>
+
+                <p>info@ittraining.edu</p>
+                <p>(555) 019-2834</p>
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+            © 2026 IT Training Center. Student Platform.
+        </div>
+
+    </footer>
+
+    <div id="courseDetailModal" class="course-detail-modal" aria-hidden="true">
+        <div class="course-detail-panel">
+            <button type="button" class="close-detail" aria-label="Close details">×</button>
+            <div id="courseDetailContent"></div>
+        </div>
+    </div>
+
+    <div id="lessonModal" class="lesson-modal" aria-hidden="true">
+        <div class="lesson-box" role="dialog" aria-modal="true" aria-labelledby="lessonTitle">
+            <button type="button" class="close-lesson" aria-label="Close lesson" onclick="closeLesson()">×</button>
+            <p class="small-title">COURSE LESSON</p>
+            <h2 id="lessonTitle">Lesson</h2>
+            <div id="lessonTopic"></div>
+            <div class="lesson-actions">
+                <button type="button" class="details-btn" onclick="startLessonQuiz()">Take lesson quiz</button>
+                <button type="button" class="lesson-finish" onclick="closeLesson()">Finish lesson</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Js/courses.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Course Details - IT Training Center</title>
+    <link rel="stylesheet" href="css/sstyle.css">
+</head>
+<body>
+
+    <main class="detail-page">
+        <a class="back-link" href="Courses Detail.html">&larr; Back to all courses</a>
+
+        <section class="detail-hero">
+            <div class="detail-hero-copy">
+                <span class="course-level">Beginner &rarr; Intermediate</span>
+                <p class="small-title">COURSE DETAILS</p>
+                <h1>CSS</h1>
+                <p class="detail-lead">Learn modern CSS styling, responsive layouts, and the visual techniques that make web pages clear and engaging.</p>
+                <a class="details-btn detail-action" href="#curriculum">Explore curriculum</a>
+            </div>
+            <div class="detail-visual" aria-label="CSS course illustration">
+                <span class="code-mark">CSS</span>
+                <span class="code-line line-one"></span>
+                <span class="code-line line-two"></span>
+                <span class="code-line line-three"></span>
+            </div>
+        </section>
+
+        <section class="detail-layout">
+            <div class="detail-main">
+                <section class="detail-section">
+                    <p class="small-title">ABOUT THIS COURSE</p>
+                    <h2>Design pages that adapt beautifully</h2>
+                    <p>This practical course takes you from CSS basics to responsive page design. You will style typography, spacing, colors, Flexbox, Grid, and media queries while building polished interfaces.</p>
+                </section>
+
+                <section class="detail-section" id="curriculum">
+                    <p class="small-title">CURRICULUM</p>
+                    <h2>What you will learn</h2>
+                    <div class="curriculum-list">
+                        <button class="curriculum-item" type="button" onclick="openQuiz('css')">
+                            <span class="module-number">01</span>
+                            <span><strong>CSS foundations</strong><small>Use selectors, colors, typography, and spacing to style content.</small></span>
+                            <span class="module-arrow">&rarr;</span>
+                        </button>
+                        <button class="curriculum-item" type="button" onclick="openQuiz('css')">
+                            <span class="module-number">02</span>
+                            <span><strong>Layout with Flexbox</strong><small>Align and distribute elements in flexible one-dimensional layouts.</small></span>
+                            <span class="module-arrow">&rarr;</span>
+                        </button>
+                        <button class="curriculum-item" type="button" onclick="openQuiz('css')">
+                            <span class="module-number">03</span>
+                            <span><strong>CSS Grid and responsive design</strong><small>Create two-dimensional layouts that adapt to different screen sizes.</small></span>
+                            <span class="module-arrow">&rarr;</span>
+                        </button>
+                        <button class="curriculum-item" type="button" onclick="openQuiz('css')">
+                            <span class="module-number">04</span>
+                            <span><strong>Project styling</strong><small>Combine CSS techniques to create a polished, accessible web page.</small></span>
+                            <span class="module-arrow">&rarr;</span>
+                        </button>
+                    </div>
+                </section>
+
+                <section class="detail-section quiz-cta-section">
+                    <p class="small-title">ASSESSMENT</p>
+                    <h2>Check your understanding</h2>
+                    <div class="quiz-cta-box">
+                        <p>Take a short CSS quiz to review the key concepts from this course.</p>
+                        <button class="details-btn" type="button" onclick="openQuiz('css')">Start quiz</button>
+                    </div>
+                </section>
+            </div>
+
+            <aside class="course-summary">
+                <h2>Course overview</h2>
+                <div class="summary-row"><span>Duration</span><strong>10 weeks</strong></div>
+                <div class="summary-row"><span>Level</span><strong>Beginner to intermediate</strong></div>
+                <div class="summary-row"><span>Instructor</span><strong>Mr. David Lee</strong></div>
+                <div class="summary-row"><span>Format</span><strong>Online learning</strong></div>
+                <button type="button" class="details-btn quiz-trigger" onclick="openQuiz('css')">Take quiz</button>
+                <a href="contact.html" class="details-btn">Enroll now</a>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div><h3>IT Training Center</h3><p>Learn IT skills and start your journey with confidence.</p></div>
+            <div><h4>Sitemap</h4><a href="index.html">Home</a><a href="Courses.html">Courses</a><a href="Courses Detail.html">Courses Detail</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="register.html">Register</a></div>
+            <div><h4>Contact</h4><p>info@ittraining.edu</p><p>(555) 019-2834</p></div>
+        </div>
+        <div class="copyright">&copy; 2026 IT Training Center. Student Platform.</div>
+    </footer>
+
+    <div id="quizModal" class="quiz-modal" role="dialog" aria-modal="true" aria-labelledby="quizTitle">
+        <div class="quiz-box">
+            <button class="close-quiz" type="button" onclick="closeQuiz()" aria-label="Close quiz">&times;</button>
+            <p class="small-title">COURSE QUIZ</p>
+            <h2 id="quizTitle">Quiz</h2>
+            <form id="quizForm"><div id="questions"></div><button type="submit" class="submit-quiz">Submit Quiz</button></form>
+            <div id="quizResult" class="quiz-result"><h2>Quiz Result</h2><div class="score" id="score"></div><p id="resultMessage"></p><button class="retry-btn" type="button" onclick="retryQuiz()">Go on</button></div>
+        </div>
+    </div>
+    <script src="js/courses.js"></script>
+</body>
+</html>
