@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML &amp; CSS Course Details - IT Training Center</title>
+	<link rel="stylesheet" href="css/sstyle.css">
+</head>
+<body>
+
+	<main class="detail-page">
+		<a class="back-link" href="Courses Detail.html">&larr; Back to all courses</a>
+
+		<section class="detail-hero">
+			<div class="detail-hero-copy">
+				<span class="course-level">Beginner</span>
+				<p class="small-title">COURSE DETAILS</p>
+				<h1>HTML &amp; CSS</h1>
+				<p class="detail-lead">Build a strong foundation in web development and learn how to turn ideas into clean, responsive websites.</p>
+				<a class="details-btn detail-action" href="#curriculum">Explore curriculum</a>
+			</div>
+			<div class="detail-visual" aria-label="HTML and CSS course illustration">
+				<span class="code-mark">&lt;/&gt;</span>
+				<span class="code-line line-one"></span>
+				<span class="code-line line-two"></span>
+				<span class="code-line line-three"></span>
+			</div>
+		</section>
+
+		<section class="detail-layout">
+			<div class="detail-main">
+				<section class="detail-section">
+					<p class="small-title">ABOUT THIS COURSE</p>
+					<h2>Learn by building real web pages</h2>
+					<p>This beginner-friendly course introduces the structure of the web, semantic HTML, and modern CSS layout. You will practice each concept by creating accessible pages that work on desktop and mobile screens.</p>
+				</section>
+
+				<section class="detail-section" id="curriculum">
+					<p class="small-title">CURRICULUM</p>
+					<h2>What you will learn</h2>
+					<div class="curriculum-list">
+						<button class="curriculum-item" type="button" onclick="openQuiz('internet')"><span class="module-number">01</span><span><strong>How the web works</strong><small>Learn browsers, servers, HTTP, and web requests.</small></span><span class="module-arrow">&rarr;</span></button>
+						<button class="curriculum-item" type="button" onclick="openQuiz('html5')"><span class="module-number">02</span><span><strong>Semantic HTML5</strong><small>Structure content with meaningful, accessible elements.</small></span><span class="module-arrow">&rarr;</span></button>
+						<button class="curriculum-item" type="button" onclick="openQuiz('css3')"><span class="module-number">03</span><span><strong>CSS layout and responsive design</strong><small>Use Flexbox, Grid, spacing, and responsive sizing.</small></span><span class="module-arrow">&rarr;</span></button>
+					</div>
+				</section>
+
+				<section class="detail-section quiz-cta-section">
+					<p class="small-title">ASSESSMENT</p>
+					<h2>Check your understanding</h2>
+					<div class="quiz-cta-box">
+						<p>Test your knowledge with a quick quiz based on this course.</p>
+						<button class="details-btn" type="button" onclick="openQuiz('html5')">Start quiz</button>
+					</div>
+				</section>
+			</div>
+
+			<aside class="course-summary">
+				<h2>Course overview</h2>
+				<div class="summary-row"><span>Duration</span><strong>8 weeks</strong></div>
+				<div class="summary-row"><span>Level</span><strong>Beginner</strong></div>
+				<div class="summary-row"><span>Instructor</span><strong>Dr. Alex Kim</strong></div>
+				<div class="summary-row"><span>Format</span><strong>Online learning</strong></div>
+				<button type="button" class="details-btn" onclick="openQuiz('html5')">Take quiz</button>
+			</aside>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer-content">
+			<div><h3>IT Training Center</h3><p>Learn IT skills and start your journey with confidence.</p></div>
+			<div><h4>Sitemap</h4><a href="index.html">Home</a><a href="Courses Detail.html">Courses Detail</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="register.html">Register</a></div>
+			<div><h4>Contact</h4><p>info@ittraining.edu</p><p>(555) 019-2834</p></div>
+		</div>
+		<div class="copyright">&copy; 2026 IT Training Center. Student Platform.</div>
+	</footer>
+
+	<div id="quizModal" class="quiz-modal" role="dialog" aria-modal="true" aria-labelledby="quizTitle">
+		<div class="quiz-box">
+			<button class="close-quiz" type="button" onclick="closeQuiz()" aria-label="Close quiz">&times;</button>
+			<p class="small-title">COURSE QUIZ</p>
+			<h2 id="quizTitle">Quiz</h2>
+			<form id="quizForm"><div id="questions"></div><button type="submit" class="submit-quiz">Submit Quiz</button></form>
+			<div id="quizResult" class="quiz-result"><h2>Quiz Result</h2><div class="score" id="score"></div><p id="resultMessage"></p><button class="retry-btn" type="button" onclick="retryQuiz()">Go on</button></div>
+		</div>
+	</div>
+	<script src="js/courses.js"></script>
+</body>
+</html>
