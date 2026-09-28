@@ -1,36 +1,24 @@
+sitemap.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://YOUR-REAL-DOMAIN.com/</loc>
+    <loc>https://it-training-center-group15.vercel.app/index.html</loc>
+  </url>
+
+  <url>
+    <loc>https://it-training-center-group15.vercel.app/courses.html</loc>
   </url>
   <url>
-    <loc>https://YOUR-REAL-DOMAIN.com/index.html</loc>
+    <loc>https://it-training-center-group15.vercel.app/Courses%20Detail.html</loc>
   </url>
   <url>
-    <loc>https://YOUR-REAL-DOMAIN.com/courses.html</loc>
+    <loc>https://it-training-center-group15.vercel.app/about.html</loc>
   </url>
   <url>
-    <loc>https://YOUR-REAL-DOMAIN.com/Courses%20Detail.html</loc>
+    <loc>https://it-training-center-group15.vercel.app/contact.html</loc>
   </url>
   <url>
-    <loc>https://YOUR-REAL-DOMAIN.com/about.html</loc>
+    <loc>https://it-training-center-group15.vercel.app/register.html</loc>
   </url>
-  <url>
-    <loc>https://YOUR-REAL-DOMAIN.com/contact.html</loc>
-  </url>
-  <url>
-    <loc>https://YOUR-REAL-DOMAIN.com/register.html</loc>
-  </url>
-  <url>
-    <loc>https://YOUR-REAL-DOMAIN.com/html-course.html</loc>
-  </url>
-  <url>
-    <loc>https://YOUR-REAL-DOMAIN.com/CSS-course.html</loc>
-  </url>
-  <url>
-    <loc>https://YOUR-REAL-DOMAIN.com/git-course.html</loc>
-  </url>
-  <url>
-    <loc>https://YOUR-REAL-DOMAIN.com/UI-courses.html</loc>
-  </url>
+
 </urlset>
