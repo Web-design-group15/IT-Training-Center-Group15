@@ -1,295 +1,587 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Contact IT Training Center | Course Guidance & Support</title>
-    <meta name="description" content="Contact IT Training Center for course guidance, enrollment questions, and support on our beginner-friendly IT and web development training programs.">
-    <meta name="keywords" content="contact IT training center, IT course guidance, enroll in coding classes, training support, web development support">
+    <meta name="description"
+        content="Contact IT Training Center for course guidance, enrollment questions, and support on our beginner-friendly IT and web development training programs.">
+    <meta name="keywords"
+        content="contact IT training center, IT course guidance, enroll in coding classes, training support, web development support">
     <meta name="author" content="IT Training Center">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://YOUR-REAL-DOMAIN.com/contact.html">
     <meta property="og:title" content="Contact IT Training Center">
-    <meta property="og:description" content="Get support, ask about courses, and find the right learning path for your IT goals.">
+    <meta property="og:description"
+        content="Get support, ask about courses, and find the right learning path for your IT goals.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://YOUR-REAL-DOMAIN.com/image/logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#2563EB",
+                        dark: "#0F172A"
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="min-h-screen bg-slate-100 font-sans text-slate-800">
-    <!--NAVBAR -->
-    <header class="text-white">
-        <!-- NAVBAR -->
-        <header class="bg-white shadow-sm sticky top-0 z-50">
-            <nav class="w-full bg-[#1b567a] text-white px-6 py-3 flex items-center justify-between">
-                <!-- Logo -->
-                <a href="index.html" class="flex items-center gap-3">
-                     <img src="image/logo.png" alt="IT Training Center Logo" class="h-12 w-12 object-contain rounded-3xl">
 
-                    <span class="text-2xl font-bold text-white">
-                        IT Training Center
-                    </span>
+<body class="bg-gray-50 text-gray-800">
+    <!-- NAVBAR -->
+    <header class=" bg-white">
+        <nav class="w-full bg-[#1b567a] text-white px-6 py-3 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="image/logo.png" alt="IT Training Center Logo" class="h-12 w-12 object-contain rounded-3xl">
+                <span class="text-2xl font-bold text-white">
+                    IT Training Center
+                </span>
+            </a>
+            <div class="hidden items-center gap-8 md:flex">
+                <a href="index.html" class="font-medium text-white hover:text-primary">
+                    Home
+                </a>
+                <a href="courses.html" class="font-medium text-white hover:text-primary">
+                    Courses
+                </a>
+                <a href="course-detail.html" class="font-medium text-white hover:text-primary">
+                    Courses Details
+                </a>
+                <a href="about.html" class="font-medium text-white hover:text-primary">
+                    About
+                </a>
+                <a href="contact.html" class="font-medium text-white hover:text-primary">
+                    Contact
+                </a>
+                <a href="register.html"
+                    class="rounded-lg bg-primary px-5 py-2.5 font-medium text-white hover:bg-blue-700">
+                    Register
+                </a>
+            </div>
+
+            <button id="menuButton" class="rounded-lg border border-slate-300 px-3 py-2 md:hidden"
+                aria-label="Open menu">
+                ☰
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden border-t bg-white px-6 py-5 md:hidden">
+            <div class="flex flex-col gap-4">
+                <a href="index.html" class="font-medium text-primary">
+                    Home
+                </a>
+                <a href="courses.html" class="font-medium text-slate-600">
+                    Courses
+                </a>
+                <a href="course-detail.html" class="font-medium text-slate-600">
+                    Course Details
+                </a>
+                <a href="about.html" class="font-medium text-slate-600">
+                    About
+                </a>
+                <a href="contact.html" class="font-medium text-slate-600">
+                    Contact
+                </a>
+                <a href="register.html" class="rounded-lg bg-primary px-5 py-2.5 text-center font-medium text-white">
+                    Register
                 </a>
 
-                <div class="hidden items-center gap-8 md:flex">
-                    <a href="index.html"
-                        class="font-medium text-white hover:text-blue-500 transition-colors duration-200">
-                        Home
-                    </a>
-                    <a href="courses.html"
-                        class="font-medium text-white hover:text-blue-500 transition-colors duration-200">
-                        Courses
-                    </a>
-                    <a href="courses-detail.html"
-                        class="font-medium text-white hover:text-blue-500 transition-colors duration-200">
-                        Courses Details
-                    </a>
-                    <a href="about.html"
-                        class="font-medium text-white hover:text-blue-500 transition-colors duration-200">
-                        About
-                    </a>
-                    <a href="contact.html"
-                        class="font-medium text-white hover:text-blue-500 transition-colors duration-200">
-                        Contact
-                    </a>
-                    <a href="register.html"
-                        class=" rounded-lg bg-blue-600 px-5 py-2.5 font-medium text-white transition hover:bg-blue-700">
-                        Register
-                    </a>
-                </div>
-                <button id="menuButton" class="rounded-lg border border-slate-300 px-3 py-2 md:hidden"
-                    aria-label="Open menu">
-                    ☰
-                </button>
-            </nav>
-            
-        </header>
-        <!-- HERO-->
-        <section class="bg-white from-[#185375] to-[#236d96] px-6 py-16 text-center text-white">
-            <div class="mx-auto max-w-3xl">
-                <p class="text-sm font-bold uppercase tracking-widest text-[#37C8A4]">
-                    Get In Touch
-                </p>
-                <h1 class="mt-3 text-4xl font-extrabold sm:text-5xl text-[#185375]">
-                    Contact Us
-                </h1>
-                <p class="mx-auto mt-5 max-w-2xl text-slate-500 leading-7 text-blue-100 sm:text-lg">
-                    Whether you're choosing your first course or planning a new
-                    career path, our team is ready to guide you.
-                </p>
             </div>
-        </section>
-        <!-- MAIN CONTENT-->
-        <main class="mx-auto max-w-7xl px-6 py-14 lg:px-10">
-            <div class="grid gap-10 lg:grid-cols-2">
-                <section class="flex flex-col justify-center">
-                    <p class="text-sm font-bold uppercase tracking-widest text-[#37C8A4]">
-                        Let's Talk
-                    </p>
-                    <h2 class="mt-3 text-3xl font-bold text-[#185375]">
-                        We're here to help
-                    </h2>
-                    <p class="mt-4 max-w-lg leading-7 text-slate-500">
-                        Whether you're choosing your first course or planning
-                        a new career path, our team is ready to guide you.
-                    </p>
-                    <!-- Contact Information -->
-                    <div class="mt-8 space-y-5">
-                        <!-- Email -->
-                        <div class="flex items-center gap-4 rounded-xl bg-slate-50 p-5 shadow-sm">
-                            <div
-                                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-[#185375]">
-                                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                                    </path>
-                                </svg>
-                            </div>
+        </div>
+    </header>
+    <!--   HERO SECTION-->
 
-                            <div>
-                                <p class="text-sm text-slate-400">
-                                    Email
-                                </p>
-                                <p class="font-semibold text-[#185375]">
-                                    info@ittraining.edu
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Phone -->
-                        <div class="flex items-center gap-4 rounded-xl bg-slate-50 p-5 shadow-sm">
-                            <div
-                                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-[#185375]">
-                                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a2 2 0 012.21-.902l4.493 1.498a2 2 0 011.37 1.897V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <div>
-                                <p class="text-sm text-slate-400">
-                                    Phone
-                                </p>
-                                <p class="font-semibold text-[#185375]">
-                                    (+558) 714245874
-                                </p>
-                            </div>
-                        </div>
+    <section class="bg-blue-600 text-white py-20">
+
+        <div class="max-w-7xl mx-auto px-6 text-center ">
+
+            <p class="text-blue-200 font-semibold mb-3">
+                GET IN TOUCH
+            </p>
+
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                Contact Us
+            </h1>
+
+            <p class="max-w-2xl mx-auto text-lg text-blue-100">
+                Have questions about our courses? We are here to help you
+                start your IT learning journey.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT INFORMATION -->
+
+    <section class="py-16">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center mb-12">
+
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                    How Can We Help?
+                </h2>
+
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Contact us through phone, email, social media, or
+                    visit our training center.
+                </p>
+
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Phone -->
+                <div class="bg-white rounded-xl shadow-md p-6 text-center
+                            hover:shadow-lg transition">
+
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600
+                                rounded-full flex items-center justify-center
+                                mx-auto mb-4 text-2xl">
+                        📞
                     </div>
-                </section>
-                <!--  RIGHT SIDE - FOR -->
-                <section class="rounded-2xl border border-slate-100 bg-white p-6 shadow-xl sm:p-8">
-                    <h2 class="text-2xl font-bold text-[#185375]">
-                        Send us a message
-                    </h2>
-                    <p class="mt-2 text-sm text-slate-500">
-                        Fill out the form below and we'll get back to you.
+
+                    <h3 class="text-xl font-semibold mb-2">
+                        Phone
+                    </h3>
+
+                    <p class="text-gray-600">
+                        +855 714 245 874
                     </p>
-                    <form class="mt-6 space-y-5">
-                        <!-- Full Name -->
+
+                    <p class="text-sm text-gray-500 mt-2">
+                        Monday - Friday, 8:00 AM - 5:00 PM
+                    </p>
+
+                </div>
+
+                <!-- Email -->
+                <div class="bg-white rounded-xl shadow-md p-6 text-center
+                            hover:shadow-lg transition">
+
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600
+                                rounded-full flex items-center justify-center
+                                mx-auto mb-4 text-2xl">
+                        ✉️
+                    </div>
+
+                    <h3 class="text-xl font-semibold mb-2">
+                        Email
+                    </h3>
+
+                    <p class="text-gray-600">
+                        info@ittrainingcenter.com
+                    </p>
+
+                    <p class="text-sm text-gray-500 mt-2">
+                        We reply within 24 hours
+                    </p>
+
+                </div>
+
+
+                <!-- Location -->
+                <div class="bg-white rounded-xl shadow-md p-6 text-center
+                            hover:shadow-lg transition">
+
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600
+                                rounded-full flex items-center justify-center
+                                mx-auto mb-4 text-2xl">
+                        📍
+                    </div>
+
+                    <h3 class="text-xl font-semibold mb-2">
+                        Location
+                    </h3>
+
+                    <p class="text-gray-600">
+                        PNC-passerellesnumeriques Phnom Penh,Cambodia
+                    </p>
+
+                </div>
+
+                <!-- Social Media -->
+                <div class="bg-white rounded-xl shadow-md p-6 text-center
+                            hover:shadow-lg transition">
+
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600
+                                rounded-full flex items-center justify-center
+                                mx-auto mb-4 text-2xl">
+                        🌐
+                    </div>
+
+                    <h3 class="text-xl font-semibold mb-2">
+                        Social Media
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Facebook / Telegram
+                    </p>
+
+                    <p class="text-sm text-gray-500 mt-2">
+                        Follow us for updates
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--  CONTACT FORM + LOCATION -->
+
+    <section class="py-16 bg-white">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="grid lg:grid-cols-2 gap-12">
+
+                <!-- Contact Form -->
+                <div>
+
+                    <p class="text-blue-600 font-semibold mb-2">
+                        SEND US A MESSAGE
+                    </p>
+
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                        Get In Touch With Us
+                    </h2>
+
+                    <p class="text-gray-600 mb-8">
+                        Fill out the form below and our team will get back
+                        to you as soon as possible.
+                    </p>
+
+                    <form id="contactForm" class="space-y-5">
+
+                        <!-- Name -->
                         <div>
-                            <label for="name" class="mb-2 block text-sm font-semibold text-slate-700">
+
+                            <label for="name" class="block font-medium mb-2">
                                 Full Name
                             </label>
-                            <input id="name" name="name" type="text" placeholder="Enter your full name" required
-                                class="w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none transition focus:border-[#37C8A4] focus:bg-white focus:ring-2 focus:ring-[#37C8A4]/20">
+
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" class="w-full border border-gray-300 rounded-lg
+                                          px-4 py-3 focus:outline-none
+                                          focus:ring-2 focus:ring-blue-500">
+
                         </div>
+
                         <!-- Email -->
                         <div>
-                            <label for="email" class="mb-2 block text-sm font-semibold text-slate-700">
+
+                            <label for="email" class="block font-medium mb-2">
                                 Email Address
                             </label>
-                            <input id="email" name="email" type="email" placeholder="info@example.com" required
-                                class="w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none transition focus:border-[#37C8A4] focus:bg-white focus:ring-2 focus:ring-[#37C8A4]/20">
+
+                            <input type="email" id="email" name="email" placeholder="Enter your email" class="w-full border border-gray-300 rounded-lg
+                                          px-4 py-3 focus:outline-none
+                                          focus:ring-2 focus:ring-blue-500">
+
                         </div>
+
+                        <!-- Subject -->
+                        <div>
+
+                            <label for="subject" class="block font-medium mb-2">
+                                Subject
+                            </label>
+
+                            <input type="text" id="subject" name="subject" placeholder="What do you want to ask?" class="w-full border border-gray-300 rounded-lg
+                                          px-4 py-3 focus:outline-none
+                                          focus:ring-2 focus:ring-blue-500">
+
+                        </div>
+
                         <!-- Message -->
                         <div>
-                            <label for="message" class="mb-2 block text-sm font-semibold text-slate-700">
+
+                            <label for="message" class="block font-medium mb-2">
                                 Message
                             </label>
-                            <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
-                                required
-                                class="w-full resize-none rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none transition focus:border-[#37C8A4] focus:bg-white focus:ring-2 focus:ring-[#37C8A4]/20"></textarea>
+
+                            <textarea id="message" name="message" rows="5" placeholder="Write your message..." class="w-full border border-gray-300 rounded-lg
+                                             px-4 py-3 focus:outline-none
+                                             focus:ring-2 focus:ring-blue-500"></textarea>
+
                         </div>
-                        <!-- Button -->
-                        <button type="submit"
-                            class="w-full rounded-lg bg-[#185375] px-6 py-3 font-semibold text-white shadow-md transition duration-300 hover:bg-[#13425e] hover:shadow-lg">
+
+                        <!-- Submit -->
+                        <button type="submit" class="w-full bg-blue-600 text-white
+                                       py-3 rounded-lg font-semibold
+                                       hover:bg-blue-700 transition">
+
                             Send Message
+
                         </button>
+
+                        <!-- Success Message -->
+                        <div id="successMessage" class="hidden bg-green-100 text-green-700
+                                    p-4 rounded-lg">
+
+                            ✅ Your message has been sent successfully!
+
+                        </div>
+
                     </form>
-                </section>
-            </div>
 
-            <!--   PNC CAMBODIA LOCATION -->
-            <section class="mt-14">
+                </div>
 
-                <div class="mb-5">
-                    <p class="text-sm font-bold uppercase tracking-widest text-[#37C8A4]">
-                        Find Us
+                <!-- Location -->
+                <div>
+
+                    <p class="text-blue-600 font-semibold mb-2">
+                        FIND US
                     </p>
 
-                    <h2 class="mt-2 text-2xl font-bold text-[#185375]">
-                        Passerelles Numériques Cambodia
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                        Our Location
                     </h2>
 
-                    <p class="mt-2 text-sm text-slate-500">
-                        St. 371, Phum Tropeang Chhuk (Borey Sorla),
-                        Sangkat Tek Thla, Khan Sen Sok, Phnom Penh
+                    <p class="text-gray-600 mb-6">
+                        Come and visit our training center. Our team is
+                        ready to help you choose the right IT course.
                     </p>
-                </div>
-                <!-- Map -->
-                <div class="h-72 overflow-hidden rounded-2xl border border-slate-200 shadow-md sm:h-96">
-                    <iframe title="Passerelles Numériques Cambodia Location"
-                        src="https://www.google.com/maps?q=Passerelles%20num%C3%A9riques%20Cambodia%20(PNC),%20Phnom%20Penh&output=embed"
-                        class="h-full w-full border-0" loading="lazy" allowfullscreen>
-                    </iframe>
-                </div>
 
-            </section>
-        </main>
-        <!-- FOOTER-->
-        <footer class="bg-[#F8F9FA] text-white">
-            <div class="mx-auto max-w-7xl px-6 py-10 lg:px-10">
-                <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-                    <!-- Brand -->
+                    <!-- Location -->
                     <div>
-                        <div class="flex items-center gap-3">
-                            <span class="font-bold text-black">
-                                IT Training Center
-                            </span>
-                        </div>
-                        <p class="mt-4 max-w-xs text-sm leading-6 text-black">
-                            Simple and beginner-friendly IT learning
-                            resources for students.
-                        </p>
-                    </div>
-                    <!-- Sitemap -->
-                    <div>
-                        <h3 class="font-bold text-black">
-                            Sitemap
-                        </h3>
-                        <ul class="mt-4 space-y-3 text-sm text-blue-100">
-                            <li>
-                                <a href="index.html" class="transition hover:text-[#37C8A4] text-black">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="courses.html" class="transition hover:text-[#37C8A4] text-black">
-                                    Courses
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Courses Detail.html" class="transition hover:text-[#37C8A4] text-black">
-                                    Courses Details
-                                </a>
-                            </li>
 
-                            <li>
-                                <a href="about.html" class="transition hover:text-[#37C8A4] text-black">
-                                    About
-                                </a>
-                            </li>
+                        <!-- PNC Map -->
+                        <div class="rounded-xl overflow-hidden h-80 shadow-sm">
 
-                            <li>
-                                <a href="contact.html" class="transition hover:text-[#37C8A4] text-black">
-                                    Contact
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="register.html" class="transition hover:text-[#37C8A4] text-black">
-                                    Register
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <!-- Contact -->
-                    <div>
-                        <h3 class="font-bold text-black">
-                            Contact
-                        </h3>
-                        <div class="mt-4 space-y-3 text-sm text-black">
-                            <p>
-                                info@ittraining.edu
-                            </p>
-
-                            <p>
-                                (555) 019-2834
-                            </p>
+                            <iframe
+                                src="https://www.google.com/maps?q=Passerelles+Numériques+Cambodia,+Phnom+Penh,+Cambodia&output=embed"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
 
                         </div>
+
                     </div>
 
                 </div>
 
-                <div class="mt-10 border-t border-black/10 pt-6">
-                    <p class="text-center text-xs text-black">
-                        © 2026 IT Training Center. Student Platform.
-                    </p>
-                </div>
             </div>
-        </footer>
+
+        </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+     
+    <footer class="bg-gray-900 text-gray-300">
+
+        <div class="max-w-7xl mx-auto px-6 py-12">
+
+            <div class="grid md:grid-cols-4 gap-8">
+
+                <!-- About -->
+                <div>
+
+                    <h3 class="text-xl font-bold text-white mb-4">
+                        IT Training Center
+                    </h3>
+
+                    <p class="text-gray-400">
+                        A beginner-friendly learning platform that helps
+                        students start their IT journey.
+                    </p>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div>
+
+                    <h3 class="text-white font-semibold mb-4">
+                        Quick Links
+                    </h3>
+
+                    <div class="space-y-2">
+
+                        <a href="index.html" class="block hover:text-white">
+                            Home
+                        </a>
+
+                        <a href="courses.html" class="block hover:text-white">
+                            Courses
+                        </a>
+
+                        <a href="about.html" class="block hover:text-white">
+                            About
+                        </a>
+
+                        <a href="contact.html" class="block hover:text-white">
+                            Contact
+                        </a>
+
+                        <a href="register.html" class="block hover:text-white">
+                            Register
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Courses -->
+                <div>
+
+                    <h3 class="text-white font-semibold mb-4">
+                        Popular Courses
+                    </h3>
+
+                    <div class="space-y-2 text-gray-400">
+
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>UX/UI/DESIGN</p>
+                        <p>PYTHON</p>
+                        <p>ALGORITHM</p>
+                        <p>GITHUB</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Contact -->
+                <div>
+
+                    <h3 class="text-white font-semibold mb-4">
+                        Contact
+                    </h3>
+
+                    <div class="space-y-2 text-gray-400">
+
+                        <p>📍 PNC-passerrellesnumeriques Phnom Penh, Cambodia</p>
+
+                        <p>📞 +855 12 345 678</p>
+
+                        <p>✉️ info@ittrainingcenter.com</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="border-t border-gray-700 mt-10 pt-6
+                        text-center text-gray-500">
+
+                <p>
+                    © 2026 IT Training Center. All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+    <script>
+
+        // Mobile Menu
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", function () {
+
+            mobileMenu.classList.toggle("hidden");
+
+        });
+
+
+        // FAQ Accordion
+        const faqButtons = document.querySelectorAll(".faq-btn");
+
+        faqButtons.forEach(function (button) {
+
+            button.addEventListener("click", function () {
+
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector(".faq-icon");
+
+                // Close other FAQ answers
+                faqButtons.forEach(function (otherButton) {
+
+                    if (otherButton !== button) {
+
+                        otherButton.nextElementSibling.classList.add("hidden");
+
+                        otherButton.querySelector(".faq-icon").textContent = "+";
+
+                    }
+
+                });
+
+
+                // Toggle current answer
+                answer.classList.toggle("hidden");
+
+                if (answer.classList.contains("hidden")) {
+
+                    icon.textContent = "+";
+
+                } else {
+
+                    icon.textContent = "−";
+
+                }
+
+            });
+
+        });
+
+
+        // Contact Form
+        const contactForm = document.getElementById("contactForm");
+        const successMessage = document.getElementById("successMessage");
+
+        contactForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const subject = document.getElementById("subject").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            if (name === "" ||
+                email === "" ||
+                subject === "" ||
+                message === "") {
+
+                alert("Please fill in all fields.");
+
+                return;
+            }
+
+
+            successMessage.classList.remove("hidden");
+
+            contactForm.reset();
+
+        });
+
+
+    </script>
 
 </body>
+
 </html>
